@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLOSA PHOTO GALERRY BY WILSON</title>
+  <style>
+    /* Basic Page Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #3498db;
+      padding: 10px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Page Content */
+    .container {
+      margin-top: 70px; /* To avoid nav bar overlaying */
+      width: 80%;
+      max-width: 1200px;
+      text-align: center;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hidden by default */
+    .gallery.hidden {
+      display: none;
+    }
+
+    /* Section Titles */
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#events" onclick="showSection('events')">Events</a>
+    <a href="#program" onclick="showSection('program')">Program</a>
+    <a href="#church" onclick="showSection('church')">Catholic Church</a>
+    <a href="#ceremony" onclick="showSection('ceremony')">Ceremony</a>
+  </nav>
+
+  <div class="container">
+
+    <h1>Welcome to OLOSA Photo Gallery</h1>
+
+    <!-- Event Section -->
+    <div id="events" class="gallery hidden">
+      <h2>OUR LADY OF SNOWS ACADEMY</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZd88OtD-EHU8_1MHKxaazcsddh5XsjV10A&s" alt="EVENT 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9vdd5X4mP4c3zp-6alkC2vyMwzZhOLXF8iw&s" alt="Event 2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfVTvellfD-mqx0skmkyt0YlvRVdrW_b_edrLg8-fdyFKIjZiuftoxptez4krdMNQKXM&usqp=CAU" alt="Event 3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmES3ucxvUPTLAUZXtXORq1RYMeq_ikvoCDnhBT2Z9njJ_L5Ezhnrq3DOyJjHrHC3zMQ4&usqp=CAU" alt="Event 4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIEE1yR2cHabQWqW2BbB66dK-zHb8e6RWCUjBwEFXDmz7YNSKFSMo3v9py3cpBAzxk8M&usqp=CAU" alt="Event 5">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSX35APNgu5_p7wvjHQxpfH0J9rtZ-t9833XG1U3XtcidjgS_fpe3EelIBDQPGJMZkexM&usqp=CAU" alt="Event 6">
+      <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t39.30808-6/484315527_1056018003234088_1724721735169115100_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFs1g9nszCtO08bnN9NHsZvtMwR9Qjgb9a0zBH1COBv1tilaCNFs45K-6ukCCrb1KPSZvyidWGKB-ywafT65cK1&_nc_ohc=E64g89ByefYQ7kNvwGli91k&_nc_oc=AdlDUHW_aSXvnScGIF_AH2vUDfu2EOrLDAjgKZRCnDQq0-qVWo8uHvToSUZ2a8_KzUY&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&_nc_gid=8kKknc9mYxYKk7k-7xANDw&oh=00_AfHLtm3Yhc6k4PIVMWDqRBC_H8PXTB44yxpoi0WuVeFqWg&oe=680410CA" alt="Event 6"
+    </div>
+
+    <!-- Program Section -->
+    <div id="program" class="gallery hidden">
+      <h2>School Program</h2>
+      <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/488956280_1858183084918040_4707607166527482332_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEkIzpMFJhLsGWGGX5rAu_xUMPlvuUL0w5Qw-W-5QvTDu9fjNF1fqkwqYzQtJFTSxJ1v8I7agXG5s6uRRwnThdl&_nc_ohc=5LxMq2iwesIQ7kNvwFHoW6o&_nc_oc=AdnZHOlF9NFctx3pO9CjTRjzIvvaUMm6R9tmkltHpZraWqrEG4WTc8qpopjoQullQzQ&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=xKnLtijJaxqc51-BAdjRxQ&oh=00_AfEVLQLKHuqf2cu2oYElmQZTBC0AmRskBLJWOckpiWwXFA&oe=6803FCF6" alt="Program 1">
+      <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t39.30808-6/484231184_1056018423234046_2370402538103229038_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHBC_ZIYGohQUZ7MTkPkDj-p-QKSJk_Qyen5ApImT9DJ4s99YlqL-C5iaU1wNCNyj-Qtb74s0MLP66PYX6j0qzm&_nc_ohc=wFVOfxtpmIkQ7kNvwHs5vPQ&_nc_oc=AdnfqTDCKTe59erpgxw76GyLekdqrwRyHVq67JHC5IxpRr9hBn_yoVoU6jn02jckK3E&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&_nc_gid=Nqt_HPSjrJtNor0lGdZZhQ&oh=00_AfF8u8gZlhtIZMq7gzQBxjdFD61jKwtwhVK04Q_lVwaeSw&oe=6803CCC3" alt="Program 2">
+      <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/484322658_1843069739762708_2165697622516060208_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEzFc1xuKnK3pQbi93iScZ-kd0Zhn-KNq6R3RmGf4o2rig7omv0OVkcvgQ3-wkkcxgGcTohA_z7VtuR0D-ZgmAH&_nc_ohc=gl4d_otnXv0Q7kNvwFpJNxC&_nc_oc=AdnYKyqm37x84iyDYumOEYhCAaskudheVhl0g9xbyo8dlAX74fm72rxBsl7Rpx85hdM&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=TLFWY1tQU7drCEbb-qpolQ&oh=00_AfFj4593LK4UnoBjTf6orH52DvevIu0x8GN79ERWKd34mg&oe=6803A7F7" alt="Program 3">
+      <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/483994454_1056018386567383_5270376496610067003_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHbrt_b799I317xM_6Yj40s4DNk46XYrPngM2Tjpdis-XZFW_in3sSpEsjp0iUKChDOu16Z9rHtWwgKXprYSoIm&_nc_ohc=jL5N8Bsou_UQ7kNvwHqAvij&_nc_oc=Adl5EelqvhjWkUysQJQnP__IqscAmzPu7DV6dpStbUhMwM_ng7z5BTAmkpRSbtWB0Rw&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=YUgtTgbdUs2HVQ9kuLVI8A&oh=00_AfHRXr6wEG8zL86WZvUveOkLK9isGNtB0iQPcaktQPsu_Q&oe=6803BEC8" alt="Program 4">
+      <img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t39.30808-6/484093435_1056018063234082_4346528542590910841_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE5YT84f0rw-gXCIPeHd4GtG6Evp_sQd48boS-n-xB3jyo_z8OSytLpQ78F_FvvSR4D__7Mj2KhWXxI-l4gu100&_nc_ohc=reXOLjKxvdAQ7kNvwGQK7Vs&_nc_oc=Adk44Lk7xh03Hc9Z0wx_erGn6gz4m4Uu785ZFUM7yAXZ4LpqmkDt3qbofcE6XDeoXak&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_gid=7ebRjj768-mUxtCfUhdCJg&oh=00_AfF39EciD-Xsz7grIdL-fXJ6W8QNQwYsASwiXj41CXBB_A&oe=6803BABC" alt="Program 5">
+    </div>
+
+    <!-- Catholic Church Section -->
+    <div id="church" class="gallery hidden">
+      <h2>Catholic Church Events</h2>
+      <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/485620233_1845631966173152_2843311970065694876_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGCSzZNRO_DFOYBgAonT387dV-C1P1zrUx1X4LU_XOtTB8inreOHigMmnkiMq8nVy5NzmEgSj2P_QScEtVaUosn&_nc_ohc=9RIa5xMe5PwQ7kNvwGXzxYt&_nc_oc=AdkTcBhQ_Slvecrt5CrZuFaR5TRkdo5if3NOKklb3o8qMo64GdlVsCz-jazuUEiEmXY&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=0xvrRTsSjSb7D9sZEvI2Og&oh=00_AfH-nVntpcr48FVZYFmODONAV4fx9tcKaciQjHDpKyQ82g&oe=68041481" alt="Church Event 1">
+      <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/485694455_1845632252839790_7775941340330476726_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHk0hCFYb9PXp6w_4ZIuOBtG6aLj7B8DWobpouPsHwNapEN1ddddnA6Y6gQL73ePcccf1ayTn247ZVn5O25AM1f&_nc_ohc=aWkEh5xuNDYQ7kNvwGxfTXU&_nc_oc=AdlliwMZdTezpZDNkUFlsISPHYja-kbcduXXH7uuEe7qC44GMvVq89_k8FmLkjzshlI&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=7Y_yJJi3ETCIFQ4o-0RPdA&oh=00_AfEbIN8UPx2ByJ_rO1_3VgzVYhjAZ7obm9w75GTyAXsGkg&oe=6803E50E" alt="Church Event 2">
+      <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t39.30808-6/485696451_1845632326173116_5710084160411057656_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFt884j0rrMrzXoNGXSj7rreOmtKedk-Mt46a0p52T4y1IpV3dEUZdMizjrs2xbclTxpoNesNcAchPiXJGzPUCs&_nc_ohc=IUuWMh9FwlcQ7kNvwHSuy7F&_nc_oc=AdloOhrUf9CbnnBoJiN2vJnFZvyplTu6rHRn41pbQHWZtRz-_7bNS_OBusmZXgVtj7M&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&_nc_gid=jLH0eDuUZC5jDa2oFQAClg&oh=00_AfFBnn9UBLqW1t7GZjIei8sUMcmRkkYUhqpCQC1hSE979Q&oe=6803FFA7" alt="Church Event 3">
+      <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/485387684_1845632416173107_6565537577449493834_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFO-a__9HjtpZmNhTZjZTggpHUdg9G6oiqkdR2D0bqiKhtfkhmRBosJILbfA-v9knvd9elPbzx_Dd18rTaC3Sgn&_nc_ohc=sSYrr2Z01MUQ7kNvwEh3JWQ&_nc_oc=Adn0TK5tnOQq5hvZuvwtnXAlcw8yF2Z4rjsWJumdjLxPNrqpzdhUYJ4jZ-mxLrbUJbs&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=t0FOJ93jqeIepBDYH0UwbA&oh=00_AfGVcgy35ME1ssFuRqGaeSTBtgyVFH5P35trosdYS6YtBA&oe=6803EC23" alt="Church Event 4">
+      <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/485731544_1845632506173098_3107679123353506267_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE1KJmE73tRKeER6Ni--NLjqVnrVJvoe7mpWetUm-h7ucgsWPyuxUVXcuqd8sFUZuufX_hAsGxpNR-wkBJD_Ns_&_nc_ohc=WUT0j4WFnikQ7kNvwHBgKVf&_nc_oc=AdkOacx_wqv204SRDhDBbwVVVleNSD3Mpv331wEtRwN8VvYxuAgeN5IyW5nyC61N6B0&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=9aUciIZhNg7YwJ7XMXTPrA&oh=00_AfFy1B6hwedtGJaMAI11FMb689wXgVu5eB4ANLRqT0dEOw&oe=6803E288" alt="Church Event 5">
+    </div>
+
+    <!-- Ceremony Section -->
+    <div id="ceremony" class="gallery hidden">
+      <h2>Ceremony</h2>
+      <img src="https://via.placeholder.com/300x200?text=Ceremony+1" alt="Ceremony 1">
+      <img src="https://via.placeholder.com/300x200?text=Ceremony+2" alt="Ceremony 2">
+      <img src="https://via.placeholder.com/300x200?text=Ceremony+3" alt="Ceremony 3">
+      <img src="https://via.placeholder.com/300x200?text=Ceremony+4" alt="Ceremony 4">
+      <img src="https://via.placeholder.com/300x200?text=Ceremony+5" alt="Ceremony 5">
+    </div>
+
+  </div>
+
+  <script>
+    // Function to show selected section and hide others
+    function showSection(section) {
+      const sections = document.querySelectorAll('.gallery');
+      sections.forEach(function(sec) {
+        sec.classList.add('hidden'); // Hide all sections
+      });
+      document.getElementById(section).classList.remove('hidden'); // Show the clicked section
+    }
+
+    // Set default view to the first section (Events)
+    showSection('events');
+  </script>
+
+</body>
+</html>
